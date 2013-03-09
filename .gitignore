@@ -1,0 +1,10 @@
+*~
+*.pyc
+.gaedata/
+django
+djangotoolbox
+autoload
+dbindexer
+djangoappengine
+build
+settings_private_fake.py
