@@ -7,11 +7,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
 
-    # TODO
-    ('^$', 'django.views.generic.simple.direct_to_template', {'template': 'home.html'}),
-
     # Auth & Homepage
-    # url(r'', include('app_auth.urls')),
+    url(r'', include('app_auth.urls')),
 
     # Admin
     url(r'^admin/', include(admin.site.urls)),

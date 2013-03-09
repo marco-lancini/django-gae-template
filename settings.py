@@ -90,7 +90,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
     'social_auth.context_processors.social_auth_by_name_backends',
     'social_auth.context_processors.social_auth_backends',
-    #'social_auth.context_processors.social_auth_by_type_backends',
 )
 
 STATICFILES_FINDERS = (
@@ -146,16 +145,16 @@ SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.social.social_auth_user',
     'social_auth.backends.pipeline.associate.associate_by_email',
     'social_auth.backends.pipeline.misc.save_status_to_session',
-    'app_auth.pipeline.redirect_to_ask_username',
-    'app_auth.pipeline.username',
+    # 'app_auth.pipeline.redirect_to_ask_username',
+    # 'app_auth.pipeline.username',
     'social_auth.backends.pipeline.user.create_user',
     'social_auth.backends.pipeline.social.associate_user',
     'social_auth.backends.pipeline.social.load_extra_data',
     'social_auth.backends.pipeline.user.update_user_details',
     'social_auth.backends.pipeline.misc.save_status_to_session',
-    'app_auth.pipeline.update_name',
-    'app_auth.pipeline.redirect_to_ask_email',
-    'app_auth.pipeline.email',
+    # 'app_auth.pipeline.update_name',
+    # 'app_auth.pipeline.redirect_to_ask_email',
+    # 'app_auth.pipeline.email',
 )
 
 AUTHENTICATION_BACKENDS = (
